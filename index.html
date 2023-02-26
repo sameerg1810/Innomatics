@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0cba31394f.js" crossorigin="anonymous"></script>
+
+    <title>Innomatics</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Innomatics-Logo1.png" class="d-block w-50 bg-light rounded-1"
+                    alt="...">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Courses</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Data Science</a>
+                            <a class="dropdown-item" href="#">Full Stack Development</a>
+                            <a class="dropdown-item" href="#">Digital Marketing</a>
+
+                            <a class="dropdown-item" href="#">Amazon Web Service</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Internship</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Data Science Internship</a>
+                            <a class="dropdown-item" href="#">Full Stack Internship</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">About us</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">About us</a>
+                            <a class="dropdown-item" href="#">Contact us</a>
+                            <a class="dropdown-item" href="#">Blog</a>
+                            <a class="dropdown-item" href="#">Reviews</a>
+                            <a class="dropdown-item" href="#">Gallery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="Placement()">Placements
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item bg-danger rounded-1">
+                        <a class="nav-link" href="#">9951666670
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <form class="d-flex w-50">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class=" rounded-5 m-lg-1 m-auto p-1 ">
+                    <i class="fa-sharp fa-solid fa-moon" onclick="darkMode()"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-sm-fluid  m-0">
+
+
+
+        <!-- carousal -->
+        <div class="conatiner w-100">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Screenshot (34).png" class="d-block w-100" alt="..." height="360">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Screenshot (35).png" class="d-block w-100" alt="..." height="360">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Screenshot (36).png" class="d-block w-100" alt="..." height="360">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Screenshot (37).png" class="d-block w-100" alt="..." height="360">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+
+
+        <!-- Placements -->
+
+
+
+        <div id="placement" class="m-auto mt-2">
+            <div class="alert alert-primary m-auto text-center border-1" role="alert">
+                <h1>Here Are Some Of Our Success Stories
+                </h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row m-1">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Abdul-Ameer-Placed-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Aditya-Salunke-Placed-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Akshay-Padgelwar-Placed-1-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Aravind-Kumar-Chittiprolu-placed.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Banda-Sai-Shivani-placed-1-min-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Bathini-Sai-Prasad-placed.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Bindiya-Roy-placed-1-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Deepika-Tedla-placed.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Sai-Charan-Velpula-placed-min.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./v.manohar-chary-placed.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./swapnil-placed.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./Sk-Asif-Ali-placed.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- courses -->
+
+        <div class="courses container text-center p-2 bg-body-emphasis">
+            <div class="alert alert-primary m-auto text-center border-1" role="alert">
+                <h1>Courses
+                </h1>
+            </div>
+            <div class="row m-auto mb-1">
+                <div class="col order-last">
+                    <div class="card bg-dark-subtle" style="width: 18rem;">
+                        <img src="./laptop1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title selector">IBM Certified Data Science</h5>
+                            <p class="card-text bg-transparent selector">
+                                This is a great choice for tech geeks, students, working professionals and aspiring data
+                                scientists who want to upskill and build a better foundation is the stream of Data
+                                Science.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark-subtle" style="width: 18rem;">
+                        <img src="./laptop2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title selector">
+                                Full stack development</h5>
+                            <p class="card-text bg-transparent selector">Learn the right skills to break into a
+                                development
+                                career & advance yourself as a full-stack Developer. It includes Frontend, Backend,
+                                databases, debugging & testing.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-first">
+                    <div class="card bg-dark-subtle" style="width: 18rem;">
+                        <img src="./laptop3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title selector">Digital Marketing</h5>
+                            <p class="card-text bg-transparent selector">Digital Marketing Course at Innomatics is
+                                perfect for
+                                Entrepreneurs, Freelancers, Job seekers, Wanna be Entrepreneurs, working professionals
+                                who want to enhance their skill.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col order-last">
+                    <div class="card bg-dark-subtle " style="width: 18rem;">
+                        <img src="./laptop4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title selector">IBM Certified Predictive Analytics
+                            </h5>
+                            <p class="card-text bg-transparent selector">Predictive Analytics Modeler is to gain
+                                knowledge in
+                                analytics models to collect, data mining, data collection, data visualization, and
+                                integration, nodes, and statistical analysis.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark-subtle" style="width: 18rem;">
+                        <img src="./laptop5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title selector">Amazon Web Services</h5>
+                            <p class="card-text bg-transparent selector">Right from the jobseeker or existing
+                                professional who
+                                wants to accelerate their career with advanced concepts of cloud computing, AWS and core
+                                services.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-first">
+                    <div class="card bg-dark-subtle" style="width: 18rem;">
+                        <img src="./laptop6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-transparent selector">
+                            <h5 class="card-title selector">Devops</h5>
+                            <p class="card-text bg-transparent">This is a must-learn course for the individuals who
+                                started her journey in the DevOps and cloud world and is ideally suited to developers,
+                                Cloud Admin, Solutions Architects and managers.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <!-- Why People Choose Our Training -->
+        <div class="accordion m-auto p-3 text-bg-info" id="accordionExample">
+            <div class="accordion-item text-bg-info">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-bg-danger" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h1>Why People Choose Our Training</h1>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card row">
+                            <div class="container ">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./computerlab2.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col text-dark mt-3">
+                                        <ul>
+                                            <li> Flexible Online Live and Classroom Training</li>
+                                            <li> 100% Internship guarantee program</li>
+                                            <li> Dedicated Placement vertical</li>
+                                            <li> Mastery level certifications that are globally accepted</li>
+                                            <li> Backup Classes & Lifetime LMS access</li>
+                                            <li> Completely Practical Oriented Approach</li>
+                                            <li> Hands-on training on the capstone projects</li>
+                                            <li> Bi-weekly connects from industry experts</li>
+                                            <li>Domain Teach back and Reverse Presentations</li>
+                                            <li> Free Technical Support & Individual Career Counselling</li>
+                                            <li> Expert mentoring Weekly Tests & Assignments</li>
+                                            <li> Mock-up Exams, and Interviews</li>
+                                            <li> Meet-ups, Workshops, Hackathons & Conferences</li>
+                                            <li> Exclusive programs for Non-IT professionals</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantages of training at Innomatics -->
+                <div class="accordion-item text-bg-info">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-bg-danger" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <h1> Advantages of training at Innomatics</h1>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body position-relative m-auto text-center">
+                            <div class=" row card  w-75 rounded-5 border-1 border-dark m-3 p-1 bg-transparent">
+                                <div class="col-12 bg-transparent"> <button type="button"
+                                        class="btn btn-danger rounded-5 m-3 ">EXPERT
+                                        TRAINERS</button>
+                                    <button type="button" class="btn btn-dark rounded-5 m-3 ">CAPSTONE
+                                        PROJECTS</button>
+                                    <button type="button" class="btn btn-dark rounded-5 m-3 ">INHOUSE
+                                        INTERNSHIP</button>
+                                    <button type="button" class="btn btn-dark rounded-5 m-3 ">Placements</button>
+                                </div>
+                            </div>
+                            <p class="">Innomatics explored all over India to get the best trainers and succeeded with
+                                it. We
+                                have a pool of trainers working with highly qualified business partners and fortune
+                                companies to provide advanced and comprehensive training.
+
+                                They curate the course content with an eye on the industry needs and standards to make
+                                students skilful and champions in solving the complex challenges of the industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Meet our experts -->
+                <div class="accordion-item text-bg-info">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed text-bg-danger" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            <h1>Meet our experts</h1>
+
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>A few reviews from our students</strong>
+                            <!-- carousal card -->
+                            <div class="card">
+                                <div id="carouselExampleIndicators" class="carousel slide experts-carousel">
+                                    <div class="carousel-indicators alert-dark">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner rounded-5">
+                                        <div class="carousel-item active">
+                                            <img src="./Screenshot (39).png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Screenshot (40).png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./Screenshot (41).png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-danger btn-sm text-center">Read more</button>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mt-3">
+
+                        <iframe class="embed-responsive-item m-auto" width="560" height="315"
+                            src="https://www.youtube.com/embed/_dCx5yIWq_A" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- footer -->
+    <div class="card text-center text-bg-dark">
+        <div class="card-header">
+            <img src="/Innomatics-Logo1.png" class="d-block w-25 bg-light rounded-1" alt="...">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">About Innomatics</h5>
+                    <p class="card-text">Innomatics Research Labs is a pioneer in “Transforming Career and Lives” of
+                        individuals in the Digital Space by catering advanced training on IBM Certified Data
+                        Science, Python, IBM Certified Predictive Analytics Modeler, Machine Learning, Artificial
+                        Intelligence (AI), Full-stack web development, Amazon Web Services (AWS), DevOps, Microsoft
+                        Azure, Big data Analytics, Digital Marketing, and Career Launching program for students who
+                        are willing to showcase their skills in the competitive job market with valuable
+                        credentials, and also can complete courses with a certificate.</p>
+                    <a href="#" class="btn btn-info"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="btn btn-danger"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Courses</h5>
+                    <p class="card-text">
+                        IBM Certified Data Science<br>
+                        Online Data Science<br>
+                        Digital Marketing<br>
+                        Amazon Web Services (AWS)<br>
+                        Full Stack Web Developer<br>
+                        Refer a Friend<br>
+                        Placements</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Contact Details</h5>
+                    <p class="card-text">Kukatpally
+
+                        #205, 2nd Floor, Fortune Signature, Near JNTU Metro Station, Kukatpally, Hyderabad,
+                        Telangana 500085
+
+                        Gachibowli
+
+                        2nd Floor, Leeway, BP Raju Marg, Opp. Sarath City Capital Mall, Beside Subbayagari Hotel,
+                        Laxmi Cyber City, Whitefields, Kondapur, Telangana 500081
+
+                        Phone/Whatsapp:
+                        +91-9951666670 / +91-6304126766 / +91-9347804375
+
+                        For Course: info@innomatics.in
+                    </p>
+
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                © 2021 Innomatics Research Labs Pvt Ltd, All rights reserved.
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
